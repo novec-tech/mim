@@ -6,10 +6,5 @@
 # load uid
 uid='cat /var/mim.conf'
 
-
-# send uid to airtable
-curl -d @/var/mim.conf https://hooks.airtable.com/workflows/v1/genericWebhook/appJFrySXaUO3JXGF/wflcPpnxuEfmniBbm/wtrGFIjIyAn5BTsiZ?$uid
-
-
-
-
+# send uid to webhook
+curl -d @/var/mim.conf https://webhook.site/d9b390e4-0721-4506-acd3-4e1253d0ab25
