@@ -4,7 +4,7 @@
 [ ! -f /var/mim.conf ] && openssl rand -hex 20 > /var/mim.conf
 
 # load uid
-uid = 'cat /var/mim.conf'
+uid='cat /var/mim.conf'
 
 # send uid to airtable
 curl -d @/var/mim.conf https://hooks.airtable.com/workflows/v1/genericWebhook/appJFrySXaUO3JXGF/wflcPpnxuEfmniBbm/wtrGFIjIyAn5BTsiZ?$uid
